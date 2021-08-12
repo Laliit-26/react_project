@@ -2,7 +2,7 @@
 
 ![tik_tak](https://user-images.githubusercontent.com/84198817/129192416-8b6f9eec-436f-40d8-8e3c-22ae63126227.png)
 
-
+here is the link of Application.  https://uptiktaktoe.netlify.app/    <p>
 Created a Tic Tac Toe(Zero, Kaata in Hindi :D) game
 
 <h2>Rules of the game:</h2>
