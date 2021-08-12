@@ -1,8 +1,8 @@
-Tic Tac Toe
+<h1>Tic Tac Toe</h1>
 
 Create a Tic Tac Toe(Zero, Kaata in Hindi :D) game
 
-Rules of the game:
+<h2>Rules of the game:</h2>
 
 1.The game is played on a grid that's 3 squares by 3 squares.
 
@@ -12,7 +12,7 @@ Rules of the game:
 
 4. When all 9 squares are full, the game is over. If nobody wins, it is a draw
 
-Acceptance criteria:
+<h2>Acceptance criteria:</h2>
 
 1. Create a grid 3*3 and give grid id from 1 to 9 ---all grid element should be clickable button and id =”1”,”2”,…”9” and create an h3 element with id=”res” to display the result. It should be blank initially.
 
