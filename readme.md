@@ -1,6 +1,9 @@
 <h1>Tic Tac Toe</h1>
 
-Create a Tic Tac Toe(Zero, Kaata in Hindi :D) game
+![tik_tak](https://user-images.githubusercontent.com/84198817/129192416-8b6f9eec-436f-40d8-8e3c-22ae63126227.png)
+
+
+Created a Tic Tac Toe(Zero, Kaata in Hindi :D) game
 
 <h2>Rules of the game:</h2>
 
@@ -23,3 +26,6 @@ Create a Tic Tac Toe(Zero, Kaata in Hindi :D) game
 4. If Player2 wins, show this exact message in an h3 element “Congratulations! Player2 wins.”
 
 5. If a match is drawn then show this exact message “Draw!” match is only drawn after all boxes are filled and nobody has won.
+
+
+
