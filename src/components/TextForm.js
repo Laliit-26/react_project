@@ -34,7 +34,7 @@ export default function TextFom(props) {
     <>
       <div
         className='container'
-        style={{ color: props.mode === 'dark' ? 'white' : 'black' }}
+        style={{ color: props.mode === 'light' ? 'black' : 'white' }}
       >
         <h2 className='text-center mt-3'>{props.heading}</h2>
 
@@ -45,8 +45,9 @@ export default function TextFom(props) {
             rows='8'
             onChange={change}
             style={{
-              backgroundColor: props.mode === 'dark' ? '#042743' : 'white',
-              color: props.mode === 'dark' ? 'white' : 'black',
+              backgroundColor: props.mode === 'light' ? 'white' : 'gray',
+              color: props.mode === 'light' ? 'black' : 'white',
+              cursor: 'pointer',
             }}
             id='box'
             value={state}
@@ -83,10 +84,10 @@ export default function TextFom(props) {
           </button>
 
           <p></p>
-          <div>word count : {state.length} </div>
-         
-          <div>charactor count : {state.split(' ').length - 1}</div>
-        <hr></hr>
+          <div>word count : {state.split(' ').length - 1} </div>
+
+          <div>charactor count : {state.length} </div>
+          <hr></hr>
           <p>preview : {state}</p>
         </div>
       </div>

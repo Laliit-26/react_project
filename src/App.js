@@ -10,6 +10,11 @@ import Alerts from './components/Alerts';
 function App() {
   const [mode, setmode] = useState('light');
   const [alert, setalert] = useState(null);
+  const [color, setcolor] = useState("");
+
+  const sclr = () => {
+    setmode("red");
+}
 
     const showalert = (message, type) => {
       setalert({
@@ -24,14 +29,19 @@ function App() {
 
   if (mode === "dark")
   {
-    document.body.style.backgroundColor = '#042743';
-   
-   }
+    document.body.style.backgroundColor = '#042743'
+  //  "#042743"
+  }
+  if (mode === "red")
+  {
+    document.body.style.backgroundColor = '#4a0909'
+    
+    }
   const togglemode = () => {
     if (mode==='light')
     {
       setmode("dark");
-      document.body.style.backgroundColor = "#042743";
+      document.body.style.backgroundColor = '#042743'
       showalert('dark mode has enabled', 'success');
     }
     else {
@@ -42,7 +52,7 @@ function App() {
   }
   return (
     <>
-      <Navbar title='TextUtils' mode={mode} toggle={togglemode} />
+      <Navbar title='TextUtils' mode={mode} toggle={togglemode} clr={sclr} />
       <Alerts alert={alert}/>
        <TextForm heading='Enter the text to analyze below' mode={mode} showalert={showalert} />
 {/* <Axios/> */}

@@ -4,9 +4,14 @@ import PropTypes from 'prop-types'
 
 export default function Navbar(props) {
     return (
-      <div className='App'>
+      <div
+        className='App'
+        style={{ color: props.mode === 'light' ? 'black' : 'white' }}
+      >
         <nav
-          className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
+          className={`navbar navbar-expand-lg navbar-${props.mode} bg-${
+            props.mode === 'light' ? 'light' : 'black'
+          }`}
         >
           <div className='container-fluid'>
             <a className='navbar-brand' href='/'>
@@ -50,10 +55,36 @@ export default function Navbar(props) {
                   Search
                 </button>
               </form> */}
-              <div className={`form-check form-switch text-${props.mode==='light'?"#042743":"light"}`}>
-  <input className="form-check-input " type="checkbox" onClick={props.toggle} id="flexSwitchCheckDefault"/>
-  <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Light Mode</label>
-</div>
+              <button
+              
+                style={{
+                  color:
+                     props.mode === 'light' ? 'black' : 'white' , borderRadius: "10px",
+                  backgroundColor: props.mode === 'light' ? 'white' : 'black',
+                  margin:"1px 7px"
+                  }}
+                onClick={props.clr}
+              >
+                red mode
+              </button>
+              <div
+                className={`form-check form-switch text-${
+                  props.mode === 'light' ? '#042743' : 'light'
+                }`}
+              >
+                <input
+                  className='form-check-input '
+                  type='checkbox'
+                  onClick={props.toggle}
+                  id='flexSwitchCheckDefault'
+                />
+                <label
+                  className='form-check-label'
+                  htmlFor='flexSwitchCheckDefault'
+                >
+                  Light Mode
+                </label>
+              </div>
             </div>
           </div>
         </nav>
